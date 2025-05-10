@@ -36,9 +36,9 @@ Backendová část slouží pro:
 
 > Backend je potřeba rozbalit ze souboru `backend.zip`.
 
-##🔌 Arduino (ESP8266) firmware
+## 🔌 Arduino (ESP8266) firmware
 
-Ve složce arduino/ se nachází firmware pro mikrokontrolér ESP8266 (WeMos D1 R2), který komunikuje s elektroměrem pomocí RS485 a Modbus RTU.
+Ve složce Arduino-kod/ se nachází firmware pro mikrokontrolér ESP8266 (WeMos D1 R2), který komunikuje s elektroměrem pomocí RS485 a Modbus RTU.
 
 Tento program každou minutu načte z elektroměru hodnoty:
 
