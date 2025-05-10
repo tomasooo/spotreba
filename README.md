@@ -36,6 +36,31 @@ Backendová část slouží pro:
 
 > Backend je potřeba rozbalit ze souboru `backend.zip`.
 
+🔌 Arduino (ESP8266) firmware
+Ve složce arduino/ se nachází firmware pro mikrokontrolér ESP8266 (WeMos D1 R2), který komunikuje s elektroměrem pomocí RS485 a Modbus RTU.
+
+Tento program každou minutu načte z elektroměru hodnoty:
+
+napětí (V) – registr 0x0000
+
+proud (A) – registr 0x0006
+
+výkon (W) – registr 0x000C
+
+spotřeba (kWh) – registr 0x0156
+
+Naměřená data odešle jako JSON přes HTTP POST na REST API (/prijem.php nebo jiný endpoint na backendu).
+
+🛠 Funkce:
+
+komunikace přes knihovnu ModbusMaster
+
+řízení směru přenosu přes pin D0 (DE/RE)
+
+odesílání JSONu přes WiFi (ESP8266HTTPClient)
+
+jednoduchá integrace s backendem nebo databází
+
 ## ⚙️ Použité technologie
 
 - **ESP8266** – mikrokontrolér pro sběr dat z elektroměru
