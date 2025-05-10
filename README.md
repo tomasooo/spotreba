@@ -34,7 +34,7 @@ Backendová část slouží pro:
 - poskytování REST API endpointů pro frontend,
 - případné napojení na další logiku zpracování.
 
-> Backend je potřeba rozbalit ze souboru `backend.zip`.
+
 
 ## 🔌 Arduino (ESP8266) firmware
 
